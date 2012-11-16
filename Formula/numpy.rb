@@ -5,6 +5,8 @@ class Numpy < Formula
   url 'http://pypi.python.org/packages/source/n/numpy/numpy-1.6.2.tar.gz'
   sha1 'c36c471f44cf914abdf37137d158bf3ffa460141'
 
+  depends_on 'nose' => :test
+
   def installi
     ENV.fortran
     system "python", "setup.py", "install"
