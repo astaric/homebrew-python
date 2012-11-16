@@ -7,7 +7,7 @@ class Numpy < Formula
 
   depends_on 'nose' => :test
 
-  def installi
+  def install
     ENV.fortran
     system "python", "setup.py", "install"
   end
